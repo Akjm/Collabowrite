@@ -5,13 +5,13 @@
 	<title>
 		Collabowrite
 	</title>
-	
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	
+
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
-	
+
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="./index_files/bootstrap.min.js"></script>
 </head>
@@ -19,24 +19,24 @@
 	<script>
 		var story = [];
 		var output = "";
-		
+
 		function arr2string() {
 		 	for (i=0;i<story.length;i++) {
-		 		
+
 		 		if (i!== story.legnth - 1) {output+=story[i] + " ";}
 		 		else {output+=story[i];}
 		 	}
-		 	
+
 		 	return output
 		}
-		
+
 		function pass() {
 			story.push(document.getElementById("textArea").value);
 			document.getElementById("prev").innerHTML = story[story.length - 1];
 			console.log(story);
-			
+
 		}
-		
+
 		function endS() {
 			document.getElementById("top").style.display = "none";
 			document.getElementById("bottom").style.display = "none";
@@ -50,7 +50,7 @@
 		<div class="col-lg-6">
 			<h1>Collabowrite</h1>
 			<p class="lead">Play with 3 or more people for maximum chaos.</p>
-			<p class="" id="prev">This text will be replaced with whatever you write below. After that, the text will again be replaced by the new sentence. Pass the keyboard around to your friends and watch the story evolve. Once you are finished typing press pass the keyboard, and to view the whole story press end story. Remember to use proper grammar with a period at the end and a capital at the start.</p>
+			<p class="" id="prev">This text will be replaced with whatever you write below. Every time a new sentence is added, only the previous will be shown. Remember to use proper grammar with a period at the end and a capital at the start.</p>
 		<hr>
 		</div>
 	</div>
@@ -63,11 +63,11 @@
 	        <span class="help-block">Once you're done adding to the story, pass the keyboard to the next person or press end to view the entire story and finish the session.</span>
 	      </div>
 	    </div>
-	    
+
 	    <div class="form-group">
 	      <div class="col-lg-10 col-lg-offset-3">
 	        <button id="passButton" type="reset" class="btn btn-default" onclick="pass()">Pass the keyboard</button>
-	        
+
 	      </div>
 	    </div>
 	  </fieldset>
@@ -76,7 +76,7 @@
 		<div class="col-lg-3"></div>
 		<button class="btn btn-primary" style="margin-left: 15px;" id="endbutton" onclick="endS()">End story</button>
 	</div>
-	
+
 	<div class="row" id="done" style="display: none;">
 		<div class="col-lg-3"></div>
 		<div class="col-lg-6">
