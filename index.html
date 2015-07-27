@@ -11,8 +11,8 @@
     <!-- Optional theme -->
     <link href="https://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled and minified JavaScript -->
-
     <script src="./index_files/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -57,7 +57,7 @@
 
             <p class="lead">Play with 3 or more people for maximum chaos.</p>
 
-            <p class="" id="prev">This text will be replaced with whatever you write below. Every time a new sentence is added, only the previous will be shown. Remember to use proper grammar with a period at the end and a capital at the start.</p>
+            <p id="prev">This text will be replaced with whatever you write below. Every time a new sentence is added, only the previous will be shown. Remember to use proper grammar with a period at the end and a capital at the start.</p>
             <hr>
         </div>
     </div>
@@ -65,14 +65,11 @@
     <form class="form-horizontal" id="bottom" name="bottom">
         <fieldset>
             <div class="form-group">
-                <label class="col-lg-3 control-label" for="textArea">Type a sentence
-                </label>
+                <label class="col-lg-3 control-label" for="textArea">Type a sentence</label>
 
                 <div class="col-lg-6">
-                    <textarea class="form-control" id="textArea" rows="3">
-                    </textarea> <span class="help-block">Once you're done adding to the story, pass
-the keyboard to the next person or press end to view the entire story and
-finish the session.</span>
+                    <textarea class="form-control" id="textArea" rows="3"></textarea>
+                    <span class="help-block">Once you're done adding to the story, pass the keyboard to the next person. Press end story after pressing pass the keyboard to view the entire story and finish the session.</span>
                 </div>
             </div>
 
@@ -86,8 +83,7 @@ finish the session.</span>
 
     <div class="row">
         <div class="col-lg-3"></div>
-        <button class="btn btn-primary" id="endbutton" onclick="endS()" style="margin-left: 15px;">End story
-        </button>
+        <button class="btn btn-primary" id="endbutton" onclick="endS()" style="margin-left: 15px;">End story</button>
     </div>
 
     <div class="row" id="done" style="display: none;">
@@ -99,6 +95,17 @@ finish the session.</span>
             <p class="lead" id="story"></p>
             <hr>
         </div>
+    </div>
+
+		<div class="footer navbar-fixed-bottom">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <p class="lead text-left">Created by Akjm</p>
+                <hr />
+            </div>
+        </div>
+
     </div>
 </body>
 
